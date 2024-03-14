@@ -1,31 +1,25 @@
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Project from './components/Project';
-import './App.css'; // You can add styles here
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Make sure to import Routes
+import Header from './components/Header'; // Adjust import path for Header
+import Footer from './components/Footer'; // Adjust import path for Footer
+import HomePage from './components/HomePage'; // Adjust import path for HomePage
+import ProjectsPage from './components/ProjectsPage'; // Adjust import path for ProjectsPage
+import AboutMePage from './components/AboutMePage'; // Adjust import path for AboutMePage
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <h2>My Projects</h2>
-        <div className="projects">
-          <Project
-            title="Project 1"
-            description="Description of project 1"
-            imageUrl="project1.jpg"
-          />
-          <Project
-            title="Project 2"
-            description="Description of project 2"
-            imageUrl="project2.jpg"
-          />
-          {/* Add more Project components as needed */}
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes> {/* Wrap your Route components within a Routes element */}
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/about" element={<AboutMePage />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -152,3 +152,10 @@ body {
 .nav-button:hover {
   text-decoration: none; /* Remove underline on hover */
 }
+
+.intro-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 24px; /* Increase font size */
+  height: 100vh; /* Make the section take up the entire viewport height */
+}

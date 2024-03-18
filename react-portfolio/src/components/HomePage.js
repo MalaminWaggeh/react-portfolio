@@ -20,26 +20,38 @@ function HomePage() {
     fetchQuote();
   }, []);
 
+  const handleEmailClick = () => {
+    alert('SupremeMal123@gmail.com || 862-224-8929');
+  };
+
   return (
-    <div>
-      <section className="intro-section">
-        <h2>Welcome to My Portfolio</h2>
-        <p>Add your brief introduction here</p>
+    <div style={{ textAlign: 'center', fontSize: '24px' }}>
+      <section className="intro-section" style={{ padding: '10px', height: '500px' }}>
+        <h1>Welcome to My Portfolio!</h1>
+        <h2>Hi there! My name is Malamin Waggeh!</h2>
         <div className="contact-links">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-            <img src="linkedin-icon.png" alt="LinkedIn" />
+          <h1>Socials</h1>
+          <a href="https://www.linkedin.com/in/malamin-waggeh-b32494299/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn" style={{ width: '50px', height: '50px' }} />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-            <img src="github-icon.png" alt="GitHub" />
+          <a href="https://github.com/MalaminWaggeh" target="_blank" rel="noopener noreferrer">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsT1xCnrnVH2C-rLDB_rEW6PMxJohPMLkizH5haeTuyw&s" alt="GitHub" style={{ width: '50px', height: '50px' }} />
           </a>
-          {/* Add more contact links and icons as needed */}
+          <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyeJPGScRtcCWN5jmMI1YwLVCNaYwtCswpzA&usqp=CAU" alt="Email" onClick={handleEmailClick} style={{ width: '50px', height: '50px', cursor: 'pointer' }} />
+          </div>
         </div>
+        <h3>A Full Stack Developer with a passion for overcoming challenges, learning, creating, and critical thinking!</h3>
       </section>
-      <section className="skills-section">
+      
+      <section className="skills-section" style={{ height: '500px', backgroundColor: '#f0f0f0' }}>
         <h2>Skills</h2>
-        {/* Add your skills here */}
+        <p>Include your skills here...</p>
+        <p>Additional skills...</p>
+        <p>More skills...</p>
       </section>
-      <section className="quote-section">
+      
+      <section className="quote-section" style={{ height: '300px', backgroundColor: '#f0f0f0' }}>
         <h2>Daily Quote</h2>
         <p>{quote}</p>
       </section>

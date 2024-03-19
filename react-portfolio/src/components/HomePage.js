@@ -46,9 +46,12 @@ function HomePage() {
       
       <section className="skills-section" style={{ height: '500px', backgroundColor: '#f0f0f0' }}>
         <h2>Skills</h2>
-        <p>Include your skills here...</p>
-        <p>Additional skills...</p>
-        <p>More skills...</p>
+        <h2>Frontend</h2>
+        <p>HTML, CSS, JavaScript, React.js, React Redux, BootStrap,</p>
+        <h1>Backend</h1>
+        <p>MongoDB, Node.js, MySQL.</p>
+        <h1>Languages</h1>
+        <p>JavaScript</p>
       </section>
       
       <section className="quote-section" style={{ height: '300px', backgroundColor: '#f0f0f0' }}>
